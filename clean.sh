@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ex
+set -exv
 
 git tag -d $(git tag)
 git fetch --prune --tags
