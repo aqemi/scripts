@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# This script deletes one or more git tags locally and remotely.
+# Usage: ./remove-tag.sh <tag1> <tag2> ... <tagN>
+# Example: ./remove-tag.sh v1.0.0 v1.1.0
 set -eo pipefail
 
 # Check if at least one argument (tag name) is provided

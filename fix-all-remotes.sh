@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# This script updates the remote origin URL for all git repositories in subdirectories.
+# Usage: Set FROM and TO variables to the old and new remote URL patterns.
 set -eo pipefail
 repos=$(ls -d ./*/)
 

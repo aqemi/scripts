@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# This script deletes all local and remote git tags.
+# Usage: ./delete-tags.sh
 set -e
 
 git tag -d $(git tag -l)

@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# This script force cleans the current git repository.
+# It deletes all local tags and branches except master, removes untracked files,
+# clears the stash, expires reflog, and runs aggressive garbage collection.
+# Usage: ./clean.sh
 set -exv
 
 git tag -d $(git tag)
